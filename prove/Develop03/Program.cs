@@ -1,9 +1,19 @@
-using System;
+Scripture scripture = new Scripture();
 
-class Program
-{
-    static void Main(string[] args)
+scripture.displayScripture();
+
+while(true){
+    Console.WriteLine("Please press either enter to continue or type quit to escape");
+    // scripture.displayScripture();
+    string userInput = Console.ReadLine();
+
+    if (!(userInput == "quit"))
+    {   
+        scripture.hideWord();
+        scripture.displayScripture();
+    }
+    else
     {
-        Console.WriteLine("Hello Develop03 World!");
+        break;
     }
 }
