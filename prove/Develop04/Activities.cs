@@ -13,7 +13,7 @@ public class Activities{
     }
 
     public void ending(){
-    Console.WriteLine($"Well done! You have completed {activityTime} of {activityName}.");
+    Console.WriteLine($"Well done! You have completed {activityTime} seconds of {activityName}.");
 
     }
     

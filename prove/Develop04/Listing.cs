@@ -1,3 +1,4 @@
+using System.Threading;
 public class Listing : Activities{
     public Listing(){
     activityName = "Listing Activity";
@@ -34,16 +35,12 @@ public class Listing : Activities{
         }
 
         List<string> items = new List<string>();
+        var start = DateTime.UtcNow;
 
-        while (true)
+        while (DateTime.UtcNow < start.AddMilliseconds(10000))
         {
-            Console.WriteLine("Enter an item (or type 'done' to finish):");
+            Console.WriteLine("");
             string input = Console.ReadLine();
-
-            if (input.ToLower() == "done")
-            {
-                break;
-            }
 
             items.Add(input);
         }
