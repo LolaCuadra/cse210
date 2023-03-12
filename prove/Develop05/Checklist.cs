@@ -1,8 +1,4 @@
 public class Checklist : Goal{
-    private int _timesCompleted;
-    private int _requiredTimesCompleted;
-    private int _bonusValue;
-
 
     public Checklist(string goalName, string goalDescription, int pointWorth) {
         _pointWorth = pointWorth;

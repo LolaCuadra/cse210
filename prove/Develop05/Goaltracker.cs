@@ -53,4 +53,17 @@ public class goalTracker{
             Goals[choice].checkGoal();
         }
     }
+
+    public void readGoal(){
+        string filePath = "goal.txt";
+
+        Console.WriteLine("the goals are: ");
+        
+        string[] lines = System.IO.File.ReadAllLines(filePath);
+
+        foreach (string line in lines)
+        {
+            Console.WriteLine(line);
+        }
+            }
 }
