@@ -17,10 +17,12 @@ public class Running : Activity
     {
         return distance / (length / 60.0);
     }
-
+//comment
     public override double GetPace()
     {
         return length / distance;
+
+
     }
 
     public override string GetSummary()
