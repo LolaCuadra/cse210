@@ -17,7 +17,7 @@ public class Running : Activity
     {
         return distance / (length / 60.0);
     }
-//comment
+//comment again
     public override double GetPace()
     {
         return length / distance;
