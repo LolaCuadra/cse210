@@ -16,4 +16,11 @@ public class Eternal : Goal{
     {
         return _pointWorth;
     }
+
+    public override void displayGoal()
+    {
+        Console.WriteLine($"[ ] {_goalName} ({_goalDescription})");
+        
+    }
 }
+

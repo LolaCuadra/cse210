@@ -1,9 +1,9 @@
 // Goal tracker app
+goalTracker goaltracker = new goalTracker();
 // goaltracker.addGoal();
 
 while (true)
 {
-    goalTracker goaltracker = new goalTracker();
     
     Console.WriteLine("Menu Options: ");
     Console.WriteLine("1. Create New Goal. ");
@@ -21,7 +21,7 @@ while (true)
     }
     else if (choice == 2)
     {
-        goaltracker.readGoal();
+        goaltracker.displayGoal();
     }
     else if (choice == 3)
     {
