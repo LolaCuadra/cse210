@@ -1,33 +1,22 @@
-while (true)
-{
-    
-    Console.WriteLine("What did you do today? ");
-    Console.WriteLine("1. Running ");
-    Console.WriteLine("2. Cycling ");
-    Console.WriteLine("3. Swimming ");
-    Console.WriteLine("4. Exit ");
+class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Activity> activities = new List<Activity>();
 
-    int choice = int.Parse(Console.ReadLine());
-    if (choice == 1)
-    {   
-       
+            Running running = new Running(new DateTime(2023, 03, 27), 30, 3.0);
+            Bycicle cycling = new Bycicle(new DateTime(2022, 03, 28), 45, 20.0);
+            Swimming swimming = new Swimming(new DateTime(2022, 03, 29), 60, 40);
+
+            activities.Add(running);
+            activities.Add(cycling);
+            activities.Add(swimming);
+            
+            foreach (Activity activity in activities)
+            {
+                Console.WriteLine(activity.GetSummary());
+            }
+
+            Console.ReadLine();
+        }
     }
-    else if (choice == 2)
-    {
-        
-    }
-    else if (choice == 3)
-    {
-        
-    }
-    else if (choice == 4)
-    {
-    // Exit
-    Console.WriteLine("Goodbye!");
-    break;
-    }
-    else
-    {
-    Console.WriteLine("Invalid option. Please try again.");
-    }
-}

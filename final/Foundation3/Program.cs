@@ -8,7 +8,7 @@ class Program {
         DateTime dateTime2 = new DateTime(2023, 5, 20, 14, 30, 0);
 
         Lecture lecture = new Lecture("Introduction to Data Science", "Learn the basics of Data Science from an expert", dateTime1, address1, "Josue Molina", 50);
-        Reception reception = new Reception("Weeding", "Join us to celebrate our love", dateTime2, address2, "inloom@gmail.com");
+        Reception reception = new Reception("Weeding", "Join us to celebrate our love", dateTime2, address2, "rsvp@gmail.com");
         Outdoor outdoorGathering = new Outdoor("Community Picnic", "Join us for a day of fun in the sun", dateTime1, address1, "Sunny skies with a high of 75 degrees");
 
         Console.WriteLine(lecture.GetShortDescription());
