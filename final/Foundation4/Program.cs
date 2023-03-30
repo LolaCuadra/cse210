@@ -9,8 +9,7 @@ while (true)
 
     int choice = int.Parse(Console.ReadLine());
     if (choice == 1)
-    {
-        
+    {   
        
     }
     else if (choice == 2)
